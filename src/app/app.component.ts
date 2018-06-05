@@ -1,10 +1,13 @@
+import { ContactPage } from './../pages/contact/contact';
+import { ExperiencePage } from './../pages/experience/experience';
+import { EducationPage } from './../pages/education/education';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { SkillsPage } from '../pages/skills/skills';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,7 +15,7 @@ import { ListPage } from '../pages/list/list';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = EducationPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -21,8 +24,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'About', component: HomePage },
+      { title: 'Skills', component: SkillsPage},
+      { title: 'Education', component: EducationPage},
+      { title: 'Experience', component: ExperiencePage},
+      { title: 'Contact', component: ContactPage},
+      
     ];
 
   }
