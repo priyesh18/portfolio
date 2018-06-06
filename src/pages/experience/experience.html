@@ -5,16 +5,31 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <button ion-button menuToggle>
-    <ion-icon name="menu"></ion-icon>
-  </button>
   <ion-navbar>
-    <ion-title>experience</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Experience</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <timeline endIcon="egg">
+        <timeline-item *ngFor="let item of items" col-12>
+          <timeline-time [time]="item.time"></timeline-time>
+          <ion-icon [name]="item.icon"></ion-icon>
+          <ion-card>
+            <ion-card-header>
+              {{item.title}}
+            </ion-card-header>
+            <ion-card-content>
+              <strong>{{item.position}}</strong> <br>
+              {{item.details}}
+            </ion-card-content>
+          </ion-card>
+        </timeline-item>
+    
+      </timeline>
 </ion-content>
