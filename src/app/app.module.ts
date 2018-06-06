@@ -11,6 +11,7 @@ import { MyApp } from './app.component';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { TimelineComponent, TimelineItemComponent, TimelineTimeComponent } from '../components/timeline/timeline';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SkillsPage,
     ExperiencePage,
     EducationPage,
-    ContactPage
+    ContactPage,
+    TimelineComponent,
+    TimelineItemComponent,
+    TimelineTimeComponent
   ],
   imports: [
     BrowserModule,

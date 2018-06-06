@@ -7,12 +7,30 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>education</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Education</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <timeline endIcon="egg">
+    <timeline-item *ngFor="let item of items" col-12>
+      <timeline-time [time]="item.time"></timeline-time>
+      <ion-icon [name]="item.icon"></ion-icon>
+      <ion-card>
+        <ion-card-header>
+          {{item.title}}
+        </ion-card-header>
+        <ion-card-content>
+          <strong>{{item.score}}</strong>
+          <br>{{item.content}}
+        </ion-card-content>
+      </ion-card>
+    </timeline-item>
 
+  </timeline>
 </ion-content>

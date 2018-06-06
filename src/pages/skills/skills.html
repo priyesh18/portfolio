@@ -7,13 +7,16 @@
 <ion-header>
 
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>Skills</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content >
+<ion-content>
   <ion-grid>
     <ion-row>
       <ion-col col-12 col-lg-6 col-xl-6>
@@ -24,7 +27,7 @@
           <ion-card-content>
             <ion-list>
               <ion-item *ngFor="let c of coding">
-                  <ion-icon name="code" item-start></ion-icon>
+                <ion-icon name="code" item-start color="primary"></ion-icon>
                 {{c}}
               </ion-item>
             </ion-list>
@@ -32,38 +35,38 @@
         </ion-card>
       </ion-col>
       <ion-col col-12 col-lg-6 col-xl-6>
-          <ion-card>
-            <ion-card-header>
-              Development Skills
-            </ion-card-header>
-            <ion-card-content>
-              <ion-list>
-                <ion-item *ngFor="let d of dev">
-                    <ion-icon name="code" item-start></ion-icon>
-                  {{d}}
-                </ion-item>
-              </ion-list>
-            </ion-card-content>
-          </ion-card>
-        </ion-col>
-      
+        <ion-card>
+          <ion-card-header>
+            Development Skills
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item *ngFor="let d of dev">
+                <ion-icon name="code" item-start color="primary"></ion-icon>
+                {{d}}
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
     </ion-row>
     <ion-row>
-        <ion-col col-12 col-lg-6 col-xl-6>
-            <ion-card>
-              <ion-card-header>
-                Soft Skills
-              </ion-card-header>
-              <ion-card-content>
-                <ion-list>
-                  <ion-item *ngFor="let d of soft">
-                      <ion-icon name="checkmark" item-start></ion-icon>
-                    {{d}}
-                  </ion-item>
-                </ion-list>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
+      <ion-col col-12 col-lg-6 col-xl-6>
+        <ion-card>
+          <ion-card-header>
+            Soft Skills
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item *ngFor="let d of soft">
+                <ion-icon name="checkmark" item-start color="primary"></ion-icon>
+                {{d}}
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
     </ion-row>
   </ion-grid>
 
