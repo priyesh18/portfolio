@@ -1,3 +1,4 @@
+import { BlogPage } from './../pages/blog/blog';
 import { ContactPage } from './../pages/contact/contact';
 import { ExperiencePage } from './../pages/experience/experience';
 import { EducationPage } from './../pages/education/education';
@@ -15,7 +16,7 @@ import { SkillsPage } from '../pages/skills/skills';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = ExperiencePage;
+  rootPage: any = BlogPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -28,8 +29,8 @@ export class MyApp {
       { title: 'Skills', component: SkillsPage},
       { title: 'Education', component: EducationPage},
       { title: 'Experience', component: ExperiencePage},
+      { title: 'Blog', component: BlogPage },      
       { title: 'Contact', component: ContactPage},
-      
     ];
 
   }

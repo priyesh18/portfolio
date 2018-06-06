@@ -1,3 +1,4 @@
+import { BlogPage } from './../pages/blog/blog';
 import { ContactPage } from './../pages/contact/contact';
 import { EducationPage } from './../pages/education/education';
 import { ExperiencePage } from './../pages/experience/experience';
@@ -21,6 +22,7 @@ import { TimelineComponent, TimelineItemComponent, TimelineTimeComponent } from 
     ExperiencePage,
     EducationPage,
     ContactPage,
+    BlogPage,
     TimelineComponent,
     TimelineItemComponent,
     TimelineTimeComponent
@@ -36,7 +38,8 @@ import { TimelineComponent, TimelineItemComponent, TimelineTimeComponent } from 
     SkillsPage,
     ExperiencePage,
     EducationPage,
-    ContactPage
+    ContactPage,
+    BlogPage
   ],
   providers: [
     StatusBar,
