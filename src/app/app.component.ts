@@ -16,7 +16,7 @@ import { SkillsPage } from '../pages/skills/skills';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = BlogPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
