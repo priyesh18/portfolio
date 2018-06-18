@@ -1,5 +1,4 @@
 import { BlogPage } from './../pages/blog/blog';
-//import { ContactPage } from './../pages/contact/contact';
 import { ExperiencePage } from './../pages/experience/experience';
 import { EducationPage } from './../pages/education/education';
 import { Component, ViewChild, OnDestroy } from '@angular/core';
@@ -30,7 +29,6 @@ export class MyApp implements OnDestroy {
       { title: 'Education', component: EducationPage, icon: 'school'},
       { title: 'Experience', component: ExperiencePage, icon: 'briefcase'},
       { title: 'Blog', component: BlogPage, icon: 'book' },      
-      //{ title: 'Contact', component: ContactPage, icon: 'contact'},
     ];
 
   }

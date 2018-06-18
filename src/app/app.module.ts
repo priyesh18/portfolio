@@ -1,5 +1,4 @@
 import { BlogPage } from './../pages/blog/blog';
-import { ContactPage } from './../pages/contact/contact';
 import { EducationPage } from './../pages/education/education';
 import { ExperiencePage } from './../pages/experience/experience';
 import { SkillsPage } from '../pages/skills/skills';
@@ -21,7 +20,6 @@ import { TimelineComponent, TimelineItemComponent, TimelineTimeComponent } from 
     SkillsPage,
     ExperiencePage,
     EducationPage,
-    ContactPage,
     BlogPage,
     TimelineComponent,
     TimelineItemComponent,
@@ -38,7 +36,6 @@ import { TimelineComponent, TimelineItemComponent, TimelineTimeComponent } from 
     SkillsPage,
     ExperiencePage,
     EducationPage,
-    ContactPage,
     BlogPage
   ],
   providers: [
