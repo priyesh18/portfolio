@@ -22,7 +22,7 @@
       <ion-col col-12 col-md-6 col-lg-6 col-xl-6 *ngFor="let b of items" >
         <ion-card>
           <ion-card-content>
-            <img [src]=b.img class="image">
+            <img [alt]=b.title [src]=b.img class="image">
             <div class="middle">
                 <a ion-button [href]=b.link target="_blank">Read on Medium</a>
               </div>
