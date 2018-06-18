@@ -2,11 +2,34 @@
   <ion-menu [content]="content">
     
 
-    <ion-content >
+    <ion-content>
       <ion-list>
-        <button text-center menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-          {{p.title}}
+        <button ion-button icon-start large clear menuClose block *ngFor="let p of pages" (click)="openPage(p)">
+            <ion-icon [name]=p.icon ></ion-icon>
+           {{p.title}}
         </button>
+      </ion-list>
+      <ion-list text-center>
+          <a href="mailto:safal.priyesh@gmail.com" color="danger" rel="noopener" target="_blank" ion-button  icon-left outline>
+              <ion-icon name="mail"></ion-icon>
+              Email
+            </a>
+          <a href="https://twitter.com/Priyesh_p18?s=09" rel="noopener" target="_blank" ion-button icon-left outline>
+            <ion-icon name="logo-linkedin"></ion-icon>
+            Linkedin
+          </a>
+          <a href="https://github.com/priyesh18" rel="noopener" target="_blank" color="dark" ion-button icon-left outline>
+            <ion-icon name="logo-github"></ion-icon>
+            Github
+          </a>
+          <a href="https://twitter.com/Priyesh_p18?s=09" rel="noopener" target="_blank" ion-button icon-left outline>
+            <ion-icon name="logo-twitter"></ion-icon>
+            Twitter
+          </a>
+          <a href="https://medium.com/@priyeshp18" rel="noopener" target="_blank" color="dark" ion-button icon-left outline>
+            <ion-icon name="logo-rss"></ion-icon>
+            Medium
+          </a>
       </ion-list>
     </ion-content>
 
