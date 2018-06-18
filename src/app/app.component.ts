@@ -1,7 +1,7 @@
 import { BlogPage } from './../pages/blog/blog';
 import { ExperiencePage } from './../pages/experience/experience';
 import { EducationPage } from './../pages/education/education';
-import { Component, ViewChild, OnDestroy } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -12,7 +12,7 @@ import { SkillsPage } from '../pages/skills/skills';
 @Component({
   templateUrl: 'app.html'
 })
-export class MyApp implements OnDestroy {
+export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage: any = HomePage;
@@ -43,19 +43,7 @@ export class MyApp implements OnDestroy {
   }
 
   openPage(page) {
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
-  ionViewWillLeave() {
-    console.log('leaving');
-  }
-  ionViewCanLeave() : boolean {
-    let flag = true;
-    console.log(flag);
-    return false;
-  }
-  ngOnDestroy() {
-    console.log('destroyed');
-  }
+  
 }
