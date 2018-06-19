@@ -2,8 +2,28 @@ page-home {
   
   .details {
     position: relative;
-    top: 30%;
-    font-size: 150%;
+    top: 32px;
+    font-size: 1.1em;
+    animation: fadein 1.0s linear 2.0s forwards;
+    -webkit-animation: fadein 1.0s linear 2.0s forwards;
+    opacity: 0;
+  }
+  img {
+    border-radius: 50%;
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40px;
+    border: 0.3em solid #488aff;
+  }
+  .head {
+    background-color:#488aff;
+    height: auto;
+    width: 100%;
+    opacity: 1;
   }
   .menubtn {
     position: absolute;
@@ -12,21 +32,15 @@ page-home {
     color: white;
   }
   @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-  ion-content {
-    font-family: 'Anonymous Pro', monospace; 
-    color: white !important;
-    background-color: rgb(25,25,25) !important;
-    font-size: 90%;
-    justify-content: space-evenly;
-  }
+ 
   .line-1{
     //height: calc(100vh - 8em);
   //padding: 4em;
-  color: rgba(15, 150, 3, 0.795);
+  color: rgba(1, 15, 117, 0.945);
    
-
+  font-family: 'Anonymous Pro', monospace;
     position: relative;
-    top: 25%;  
+    top: 72px;  
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
@@ -41,14 +55,20 @@ page-home {
 .anim-typewriter{
   animation: typewriter 1s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
+  -webkit-animation: typewriter 1s steps(44) 1s 1 normal both,blinkTextCursor 500ms steps(44) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 7.3em;}
+  to{width: 7.4em;}
 }
 @keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
+  from{border-right-color: rgba(0,0,0,.75);}
   to{border-right-color: transparent;}
+}
+
+@keyframes fadein {
+  from {opacity: 0; top:20%;}
+  to {opacity: 1; top: 10%;}
 }
   
 }

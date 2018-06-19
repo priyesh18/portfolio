@@ -3,9 +3,7 @@
       <!-- persistent="true" -->
 
     <ion-content>
-        <div class="head">
-            <img class="avatarimg" src="assets/imgs/PriyeshPatel.jpg" alt="Priyesh Patel">
-        </div>
+        <h3></h3>
       <ion-list>
         <button ion-button icon-start large clear menuClose block *ngFor="let p of pages" (click)="openPage(p)">
             <ion-icon [name]=p.icon ></ion-icon>
@@ -21,7 +19,7 @@
             <ion-icon name="logo-linkedin"></ion-icon>
             Linkedin
           </a>
-          <a href="https://github.com/priyesh18" style="color: white; border-color: white" rel="noopener" target="_blank"  ion-button icon-left outline>
+          <a href="https://github.com/priyesh18" style="color: black; border-color: black" rel="noopener" target="_blank"  ion-button icon-left outline>
             <ion-icon name="logo-github"></ion-icon>
             Github
           </a>
@@ -29,7 +27,7 @@
             <ion-icon name="logo-twitter"></ion-icon>
             Twitter
           </a>
-          <a href="https://medium.com/@priyeshp18" style="color: white; border-color: white" rel="noopener" target="_blank"  ion-button icon-left outline>
+          <a href="https://medium.com/@priyeshp18" style="color: black; border-color: black" rel="noopener" target="_blank"  ion-button icon-left outline>
             <ion-icon name="logo-rss"></ion-icon>
             Medium
           </a>
@@ -38,7 +36,7 @@
 
   </ion-menu>
   <ion-fab bottom right hideWhen="landscape">
-      <button (click)="nextPage()" ion-fab mini><ion-icon name="arrow-dropright"></ion-icon></button>
+      <button (click)="nextPage()" ion-fab mini><ion-icon name="arrow-forward"></ion-icon></button>
       
     </ion-fab>
   <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
