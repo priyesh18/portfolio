@@ -1,11 +1,10 @@
+import { Component, ViewChild } from '@angular/core';
+import { Nav, App, MenuController } from 'ionic-angular';
+
+
 import { BlogPage } from './../pages/blog/blog';
 import { ExperiencePage } from './../pages/experience/experience';
 import { EducationPage } from './../pages/education/education';
-import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform, App, MenuController } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-
 import { HomePage } from '../pages/home/home';
 import { SkillsPage } from '../pages/skills/skills';
 
@@ -19,14 +18,10 @@ export class MyApp {
 
   pages: Array<{title: string, component: any, icon: string}>;
 
-  constructor(
-    public platform: Platform, 
-    public statusBar: StatusBar, 
-    public splashScreen: SplashScreen, 
+  constructor( 
     private _app: App,
     private _menu: MenuController
   ) {
-    this.initializeApp();
     this.setupBackButtonBehavior ();
     // used for an example of ngFor and navigation
     this.pages = [
@@ -39,14 +34,6 @@ export class MyApp {
 
   }
 
-  initializeApp() {
-    this.platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }
 
   openPage(page) {
     this._app.getRootNav().push(page.component);
