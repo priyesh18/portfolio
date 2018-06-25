@@ -39,7 +39,10 @@ export class MyApp {
     this._app.getRootNav().push(page.component);
   }
   nextPage() {
-    if(this.index == this.pages.length) this.nav.popToRoot();
+    if(this.index == this.pages.length) {
+      this.nav.popToRoot();
+      this.index = 1;
+    }
     else {
       this._app.getRootNav().push(this.pages[this.index].component)
       //this.nav.push(this.pages[this.index].component);
