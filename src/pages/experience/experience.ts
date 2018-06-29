@@ -25,14 +25,14 @@ export class ExperiencePage {
     {
       title: 'Triveni Sales',
       position: 'App Development Intern',
-      details: 'We developed 2 Hybrid Apps using Ionic 3 and Firebase.',
+      details: 'We developed 2 Hybrid Apps using Ionic 3 and Firebase. The first app acted as an Admin Dashboard and the other is an E-Commerce app having features like search, filter, cart, user accounts, order placements etc.',
       icon: 'code',
       time: { subtitle: 'Dec 2017 - Jan 2018', title: '2 Months'}
     },
     {
       title: 'Hasura.io',
       position: 'Product Developent Intern',
-      details: 'Built an MVP for a course rating site using Node.js, Hasura Platform, Html, CSS, AJAX.',
+      details: 'Built an MVP for a course rating site using Node.js, Hasura Platform, Html, CSS, AJAX. All my work and learning during this internship is documented in my blogs.',
       icon: 'cube',
       time: { subtitle: 'May 2017 - Aug 2017', title: '3.5 Months'}
     }

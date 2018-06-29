@@ -1,30 +1,49 @@
 page-home {
+  $grad:linear-gradient(-135deg,#488aff, #133364);
+  ion-content {
+    background: $grad;
+  }
   
   .details {
-    position: relative;
-    top: 32px;
-    font-size: 1.1em;
     animation: fadein 0.6s linear 1.0s forwards;
     -webkit-animation: fadein 0.6s linear 1.0s forwards;
     opacity: 0;
   }
-  img {
+  ion-card {
+    overflow: visible;
+    margin-top: 130px !important;
+    position: relative;
+  }
+  .mycard {
+    position: relative;
+    overflow: visible;
+    padding-bottom: 5em;
+  }
+
+  .mycard img {
     border-radius: 50%;
-    max-width: 30%;
-    height: auto;
+    width: auto;
+    height: 9em;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    top: 40px;
-    border: 0.3em solid #488aff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -4.5em;
+    //border: 0.2em solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  .head {
-    background-color:#488aff;
-    height: auto;
-    width: 100%;
-    opacity: 1;
+  @media screen and (min-width:960px) {
+    .mycard img {
+      height: 16em;
+      top:-8em
+    }
+    .mycard {
+      padding-bottom: 9em;
+    }
   }
+  
   .menubtn {
     position: absolute;
     top: 2px;
@@ -34,13 +53,11 @@ page-home {
   @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
  
   .line-1{
-    //height: calc(100vh - 8em);
-  //padding: 4em;
   color: rgba(1, 15, 117, 0.945);
    
   font-family: 'Anonymous Pro', monospace;
-    position: relative;
-    top: 72px;  
+    //position: absolute;
+    //top: 32px;
     width: 24em;
     margin: 0 auto;
     border-right: 2px solid rgba(255,255,255,.75);
@@ -48,7 +65,7 @@ page-home {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    transform: translateY(-50%);    
+    //transform: translateY(-50%);    
 }
 
 /* Animation */
@@ -67,8 +84,8 @@ page-home {
 }
 
 @keyframes fadein {
-  from {opacity: 0; top:20%;}
-  to {opacity: 1; top: 10%;}
+  from {opacity: 0; }
+  to {opacity: 1;}
 }
   
 }
